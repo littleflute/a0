@@ -1,0 +1,10 @@
+ Volume in drive C is WINDOWS
+ Volume Serial Number is 02F0-3A78
+
+ Directory of c:\Users\13699\xd\github\ted1\docs\63
+
+2019/05/26  01:59    <DIR>          .
+2019/05/26  01:59    <DIR>          ..
+2019/05/26  01:59                 0 i.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  227,584,233,472 bytes free
