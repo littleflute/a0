@@ -1,6 +1,6 @@
 //alert("i");
 var v = bl$("id_div_" + "plxName-i.js"); 
-v.innerHTML = "i.js test v0.1. 2 ";
+v.innerHTML = "i.js test v0.1. 3 ";
 var b0	=  blo0.blBtn( v , v.id + "b0" , "b0", "brown" );
 b0.onclick = function(){
 	b0.v.innerHTML = ftnI;
@@ -84,12 +84,12 @@ btn.onclick = function run(_this, _v) {
        var au = bl$("myVideo");
 	var ct = au. currentTime;
 	for( var i=1;i<ll.length;i++){
-		ti = tm[i]*60+ ts[i]; 	var dt = ti - ct;
+		ti = parseInt(tm[i]*60) + parseInt(ts[i]); 	var dt = ti - ct;
 		if( dt <0.5 && dt > -0.5){
-			li = ll[i]; ii = i;
+			ii = i;
 		}
 	}
-       _v.innerHTML = n + ":" + ct + ": ii =" + ii + " tm=" + tm[ii] + "ts=" + ts[ii]+ "<br>" + li;
+       _v.innerHTML = n + ":" + ct + ": ii =" + ii + " tm=" + tm[ii] + "ts=" + ts[ii]+ "<br>" + ll[ii] ;
    }
  }
 }(btn,v);
