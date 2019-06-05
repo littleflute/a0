@@ -1,14 +1,88 @@
 //alert("i");
 var v = bl$("id_div_" + "plxName-i.js"); 
-v.innerHTML = "i.js test v0.0. 41 ";
-var b1	=  blo0.blBtn( v , v.id + "b1" , "b1", "gold" );
+v.innerHTML = "i.js test v0.0. 125 ";
+var b0	=  blo0.blBtn( v , v.id + "b0" , "b0", "brown" );
+b0.onclick = function(){
+	b0.v.innerHTML = ftnI;
+	_on_off_div(this,b0.v);
+}
+var ll = [];
+var tm = [];
+var ts = [];
+var b0a	=  blo0.blBtn( v , v.id + "b0a" , "b0a", "purple" );
+b0a.onclick = function(){
+	b0a.v.innerHTML = ftnI;
+
+	var a = b0.v.innerHTML;
+	var b = a.split("/*");
+	var c = b[1].split(";;");
+	var d = c[1].split(":");
+	var e = "";
+ 	for(var i=1;i<d.length;i++){
+		//e +=   "[" + i + "_" + tm + ":" + ts+ "] ";
+		var di = d[i].split(" ");
+		for(var j=0; j<di.length;j++){
+			if(0==j){				
+				var f = di[j].split("\n"); 
+				for(var k=0;k<f.length;k++){
+					//e += f[k] + "r,";
+				}
+				ts[i] = f[0];
+				e +=  f[f.length-1];
+			}		 
+			else if(di.length-1 == j){
+				var f = di[j].split("\n"); 
+				for(var k=0;k<f.length;k++){
+					//e += f[k] + "k,";
+				}
+				e += f[0];
+				tm [i] =  f[f.length-1];
+			}
+			else					e += "_" + di[j] + "_";
+		}
+		//e += "<br>";
+		ll[i] = e;
+		e = "";
+	}
+	var ss = "";
+	for(var i = 1; i<ll.length;i++){
+			ss += i + "_[" + tm[i] + ":" +  ts[i] + "] " + ll[i] + "<br>";
+	}
+		this.v.innerHTML = ss;
+	_on_off_div(this,b0a.v);
+}
+var b1	=  blo0.blBtn( v , v.id + "b1" , "timer", "gold" );
+b0.v = blo0.blDiv(v, v.id + "b0v" , "b0v", "lightblue");
+b0a.v = blo0.blDiv(v, v.id + "b0av" , "b0av", "gray");
+ 
  
 b1.n = 0;
 b1.v1 = blo0.blDiv(v, v.id + "v1" , "v1", "lightgreen");
-b1. onclick = function(){
-	b1.n++;
-	b1.v1.innerHTML = b1.n;	
-}
+var btn =  b1;  var v = b1.v1;
+btn.onclick = function run(_this, _v) {
+ var r = false; 
+ var n = 0;
+ var t = null;  
+ return function(){
+  if(!r){
+     t = setInterval(myTimer ,100);
+     r=true;
+  }
+  else{
+    clearInterval(t); 
+    n = 0;
+    _v.innerHTML = n;
+    r=false;
+  }
+   
+   function myTimer() {
+       n++;
+       var au = bl$("myVideo");
+	var t = au. currentTime;
+       _v.innerHTML = n + ":" + t;
+   }
+ }
+}(btn,v);
 
 var btnTitle	=  blo0.blBtn( v , v.id + "btnTitle	" , "title", "brown" );
 btnTitle. onclick  = function(){
@@ -37,7 +111,7 @@ btnBody	. onclick  = function(){
 var btnParseBody	=  blo0.blBtn( v , v.id + " btnParseBody	" , " ParseBody	", "purple" );
 btnParseBody	. onclick  = function(){
 	b1.v1.innerHTML = btnBody	.v.innerHTML;
-	var m = document.getElementsByTagName("textarea"); var p = m[0]; p.value = this.id;
+	var m = document.getElementsByTagName("textarea"); var p = m[0]; p.value = b1.v1.id;
 }
 
 //=======================================================================================================
@@ -1169,7 +1243,7 @@ and most importantly be prepared to be
 
 amazed Thanks
 
-
+;;
 
 */
 }
