@@ -1,6 +1,8 @@
 //alert("i");
-var v = bl$("id_div_" + "plxName-i.js"); 
-v.innerHTML = "i.js test v0.0. 42 ";
+var v 		= bl$("id_div_" + "plxName-i.js"); 
+v.innerHTML 	= "i.js test v0.0. 51 ";
+v.fV		= "https://github.com/littleflute/newTed/releases/download/1-30/blTed001.mkv";
+
 var b1	=  blo0.blBtn( v , v.id + "b1" , "b1", "gold" );
  
 b1.n = 0;
@@ -9,6 +11,10 @@ b1. onclick = function(){
 	b1.n++;
 	b1.v1.innerHTML = b1.n;	
 }
+
+var btnMyVideo	=  blo0.blBtn( v , v.id + " btnMyVideo	" , "btnMyVideo", blGrey[0] );
+
+btnMyVideo.onclick = function(){ 	play(v.fV); 	}
 
 var btnTitle	=  blo0.blBtn( v , v.id + "btnTitle	" , "title", "brown" );
 btnTitle. onclick  = function(){
