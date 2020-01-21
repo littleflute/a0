@@ -1,6 +1,6 @@
 //alert("i");
 var v = bl$("id_div_" + "plxName-i.js"); 
-v.innerHTML = "i.js test v0.0. 41 ";
+v.innerHTML = "i.js test v0.0. 42 ";
 var b1	=  blo0.blBtn( v , v.id + "b1" , "b1", "gold" );
  
 b1.n = 0;
@@ -37,14 +37,24 @@ btnBody	. onclick  = function(){
 var btnParseBody	=  blo0.blBtn( v , v.id + " btnParseBody	" , " ParseBody	", "purple" );
 btnParseBody	. onclick  = function(){
 	b1.v1.innerHTML = btnBody	.v.innerHTML;
-	var m = document.getElementsByTagName("textarea"); var p = m[0]; p.value = this.id;
+	var m = document.getElementsByTagName("textarea"); 
+	var p = m[0]; 
+	p.value = this.id;
 }
 
 //=======================================================================================================
 var ftnI = function(){//ftnI;
 /*
+--title--
 
-Cole Porter, 1891-1964: He Wrote Songs for Broadway Musicals and Movies That Are Still Popular Today;;
+Cole Porter, 1891-1964: He Wrote Songs for Broadway Musicals and Movies That Are Still Popular Today
+==title==
+
+;;
+
+
+
+--body--
 
 By Shelley Gollust
 2008-2-16
@@ -53,6 +63,7 @@ VOICE ONE:
 This is Faith Lapidus.
 
 VOICE TWO:
+==body==
 
 */
 }
